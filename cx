@@ -3,6 +3,8 @@
 # cx.sh 
 #
 # change (Add) eXecute permissions to file
+# 
+# Rory Rogerson 07-07-2024
 #
 
 case $#
