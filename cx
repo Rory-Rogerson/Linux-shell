@@ -1,0 +1,17 @@
+::
+#
+# cx.sh 
+#
+# change (Add) eXecute permissions to file
+#
+
+case $#
+in
+  1)
+    chmod +x$1
+    ;;
+  *)
+    echo "Usage: `basename $0`: <file>"
+    ;;
+esac
+
