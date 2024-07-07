@@ -10,10 +10,16 @@
 case $#
 in
   1)
-    chmod +x $1
+    if [ -f $1 ]
+      chmod +x $1
+      exit $?
+    else
+      echo "`basename $0`: $1 does not exist"
+      exit 2
     ;;
   *)
     echo "Usage: `basename $0`: <file>"
+    exit 1
     ;;
 esac
 
